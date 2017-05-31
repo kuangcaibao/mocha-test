@@ -1,0 +1,25 @@
+{
+  "name": "mocha-test",
+  "version": "1.0.0",
+  "description": "mocha 测试工程",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "btest": "webpack && opn test/index.html"
+  },
+  "keywords": [
+    "mocha",
+    "test",
+    "kuangcaibao"
+  ],
+  "author": "kuangcaibao",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.0.0",
+    "mocha": "^3.4.2",
+    "opn-cli": "^3.1.0",
+    "webpack": "^2.6.1"
+  }
+}

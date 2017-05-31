@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mocha browser test</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../node_modules/mocha/mocha.css">
+  <script type="text/javascript" src="../node_modules/mocha/mocha.js"></script>
+  <!-- <script type="text/javascript" src="../node_modules/chai/chai.js"></script> -->
+</head>
+<body>
+<div id="mocha"></div>
+</body>
+<script type="text/javascript" src="../dist/test.bundle.js"></script>
+<script>
+  if (window.initMochaPhantomJS && window.location.search.indexOf('skip') === -1) {
+    initMochaPhantomJS()
+  }
+  mocha.ui('bdd');  
+  mocha.run();
+</script>
+</html>
